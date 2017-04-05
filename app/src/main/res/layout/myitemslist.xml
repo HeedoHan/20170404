@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:id="@+id/linear1_1"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/btnMenu"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/menu_toggle"
+                android:backgroundTint="?attr/colorAccent" />
+
+            <SearchView
+                android:id="@+id/btnSearch"
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.17"></SearchView>
+
+            <Button
+                android:id="@+id/postBox"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.02"
+                android:background="@drawable/letter_icon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear1_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="375dp"
+                android:headerDividersEnabled="false"></ListView>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/linear1_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/additem"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:background="@android:drawable/ic_input_add"
+                android:onClick="addClick"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>
+
+
+
+
+
+

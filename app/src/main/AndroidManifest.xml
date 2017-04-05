@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--애플리케이션 명세서-->
+
+    <manifest
+    package="com.example.hanheedo.a20170404"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--퍼미션에 대한 정보-->
+
+
+    <uses-permission
+        android:name="android.permission.INTERNET"/>
+
+    <!--앱 구성요소에 대한 정보-->
+
+
+
+    <application
+        android:theme="@style/AppTheme"
+        android:supportsRtl="true"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:allowBackup="true">
+
+    <!--메타 데이터 정보-->
+
+
+    <meta-data
+        android:name="com.facebook.sdk.ApplicationId"
+        android:value="@string/facebook_app_id"/>
+
+    <!--스플래쉬 액티비티-->
+
+
+
+    <activity
+        android:name=".Splash_activity"
+        android:theme="@style/SplashTheme"
+        android:screenOrientation="portrait">
+
+
+    <intent-filter>
+
+    <action android:name="android.intent.action.MAIN"/>
+
+    <category android:name="android.intent.category.LAUNCHER"/>
+
+</intent-filter>
+
+</activity>
+
+    <!--메인 액티비티-->
+
+
+    <activity android:name=".LoginActivity" android:label="@string/app_name"> </activity>
+
+    <!--서브 액티비티-->
+
+
+    <activity android:name=".MyItemsList"/>
+
+    <activity android:name=".AddItem"/>
+
+    <activity android:name=".SignUp"/>
+
+</application>
+
+</manifest>

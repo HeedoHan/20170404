@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<!-- 스타일 리소스 -->
+<resources>
+
+    <!-- 앱 테마 -->
+    <style parent="Theme.AppCompat.Light.DarkActionBar" name="AppTheme"/>
+
+    <!-- Customize your theme here. -->
+
+    <!-- 스플래쉬 테마 -->
+    <style parent="@android:style/Theme.Light.NoTitleBar" name="SplashTheme">
+        <item name="android:windowBackground">@drawable/image_03</item>
+    </style>
+
+</resources>
